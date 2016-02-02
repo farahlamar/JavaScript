@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html>
+	<head> 
+		<title>JS DOM style</title> 
+		<script type="text/javascript">
+			function additionne(x)		
+			{ 
+				return x+2 ;
+			}
+			function affiche()
+			{for(var i=0;i<tab.length;i++)
+				{
+					alert(additionne(tab[i]));
+				}
+			}
+		</script>
+	</head> 
+	
+	<body>
+		<script type="text/javascript">
+			var tab=new Array();
+			tab[0]= -2;
+			tab[1]=1;
+			tab[2]=4;
+		</script>
+		<h1 style ="color:pink"> Utilisation d'un tableau </h1>
+		<form>
+			<label>Cliquer sur le boutton pour lancer la fonction : </label>
+			<button onclick="affiche();"> lancer la fonction  </button>
+		</form> 
+	</body> 
+	
+ </html>

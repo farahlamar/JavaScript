@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+	<html>
+		<head>
+			<title>JS DOM style</title>
+			<script type="text/javascript">
+			
+			   function set_background(color)
+			{
+				var tab=document.getElementsByTagName("h2");
+				for(var i=0;i<tab.length;i++)
+				{	
+					tab.item(i).style.backgroundColor=color;
+				}
+				
+			}		
+			
+				/*function set_background()
+				
+						{
+							var obj1 =	document.getElementById("t");
+							var obj3 =	document.getElementById("2");
+							var obj2 =document.getElementById("1");
+							obj2.style.backgroundColor=obj1.value;
+							obj3.style.backgroundColor=obj1.value;
+						}*/
+					
+			</script>
+		</head> 
+		
+		<body >
+		
+			<h2  id ="1" > Premier Titre : </h2> 
+			<p> un premier paragraphe </p> 
+			<h2 id ="2" > Second Titre : </h2>
+			<p> un second paragraphe </p> 
+			<form id="f"> 
+			<!-- <input type="text" id ="t" name="myColor" placeholder="couleur du fond" value ="" onchange="set_background()"  /> -->
+			<input type="text" id ="t" name="myColor" placeholder="couleur du fond" value ="" onchange="set_background(this.value);"  />  
+			</form> 
+			
+		</body> 
+ 
+ </htm

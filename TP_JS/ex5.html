@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+ <html> 
+	<head> 
+		<title>Essai DHTML</title>
+		<script type="text/javascript"> 
+			function ajout()
+			{
+				
+				/* var doc= document.getElementById("listecommissions");
+				var x = document.createElement("li");
+				var texte = document.createTextNode("un element de plus ");
+				x.appendChild(texte);
+				doc.appendChild(x);	*/ 
+				   // 5-b
+				  
+				var d= document.getElementById("listecommissions");
+				var xx = document.createElement("li");
+				var obj= document.getElementById("t").value;	
+				var texte = document.createTextNode(obj);
+				
+				xx.appendChild(texte);
+				d.appendChild(xx);					
+			}
+		</script> 
+	</head>
+	
+	<body> 
+		<ul id="listecommissions"> 
+			<li >1kg de farine</li> 
+			<li>un pack de lait</li>
+		</ul> 
+		 <form>
+		<input type="text" id ="t" name="t" placeholder="ajouter un element" value =""   />
+		<input type="button" onclick="ajout();" value="Valider" />
+		</form>
+	</body> 
+	
+ </html>

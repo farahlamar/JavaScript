@@ -1,0 +1,28 @@
+<!DOCTYPE html> 
+<html>
+	<head> 
+		<title>JS DOM style</title> 
+		<script type="text/javascript">
+			function get_Attributes()
+			{ 
+			var bb = document.getElementById("bb");
+			var href= bb.getAttribute("href");
+			var target= bb.getAttribute("target");
+			alert('href = '+href+'\n\ntarget = '+target);
+			var name = document.createAttribute("name");
+			name.value="inkName";
+			bb.setAttributeNode(name);
+			}
+		</script>
+	</head> 
+	
+	<body>
+		<p>
+			<a id="bb" target="_self" href="http://www.w3.org/">Site w3C</a>
+		</p>
+		<form>
+			<button onclick="get_Attributes();"> Cliquez ICI pour avoir les valeurs des attributs </button>
+		</form> 
+	</body> 
+	
+ </html>
